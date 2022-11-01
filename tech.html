@@ -66,6 +66,56 @@
     </div>
   </div> 
 
+<!-- Forms -->
+  
+
+<form>
+    <div class="form">
+
+   
+  <label for="fname">Your favorite car?</label><br>
+  <input type="text" id="fname" name="fname" ><br>
+</div>
+</form> 
+
+<div class="popup" onclick="myFunction()">
+    <button>   Submit   </button>
+      <span class="popuptext" id="myPopup">Thank you!</span>
+    </div>
+
+<!-- Table -->
+
+  <table>
+    <tr>
+      <th>Company</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Saab</td>
+      <td>Sweden</td>
+    </tr>
+    <tr>
+      <td>Audi</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Porshe</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>BMW</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Volvo</td>
+      <td>Sweden</td>
+    </tr>
+    <tr>
+      <td>McLaren</td>
+      <td>UK</td>
+    </tr>
+  </table>
+
 
 <p id="demo"></p>
 
@@ -80,5 +130,13 @@
   
   document.getElementById("demo").innerHTML = text;
    </script>
+
+<script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
 </body>
 </html>
