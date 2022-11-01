@@ -8,13 +8,11 @@
   
 </head>
 <body>
-  <!--Timer-->
+     <!--Timer-->
   <div id="js_timer">
     <div id="timer">
       00:00
     </div>
-    
-  </div>
 
   <nav class="navbar">
     <div class="navbar__container">
@@ -42,38 +40,40 @@
   <div class="main">
     <div class="main__container">
       <div class="main__content">
-        <h1>NEXT GENERATION</h1>
+        <h1>THE</h1>
         <h2>CARS</h2>
-        <p>See what makes us different</p>
-        <button class="main__btn"><a href="/">Get started</a></button>
+       <!--  <p>See what makes us different</p>
+       <button class="main__btn"><a href="/">Get started</a></button> -->
       </div>
       <div class="main__img--container">
+        <img src="images/pic2.jpg" alt="pic" id="main__img">
         <img src="images/pic3.jpg" alt="pic" id="main__img">
+        <img src="images/pic4.jpg" alt="pic" id="main__img">
+        <img src="images/pic1.jpg" alt="pic" id="main__img">
       </div>
     </div>
   </div>
 
   <!-- Service Section-->
   <div class="services">
-    <h1>See what the hype is about</h1>
+    
     <div class="services__container">
       <div class="services__card">
-        <h2>Experience Bliss</h2>
+       <!---- <h2>Experience Bliss</h2>
+        <p>AI Powerd technology</p> 
+        <img src="images/pic4.jpg" alt="pic" id="main__img"> -->
         
-        
-        <img src="images/pic1.jpg" alt="pic" id="main__img">
       </div>
-      <div class="services__card">
+     <!--- <div class="services__card">
         <h2>Are you ready?</h2>
-        <p>Take the leap</p>
-      
-        <img src="images/pic2.jpg" alt="pic" id="main__img">
-      </div>
+        <p>Take the leap</p> 
+        
+      </div> -->
     </div>
-  </div>
+  </div> 
 
-  <!-- Footer Section -->
- <!--- <div class="footer__container">
+  <!-- Footer Section 
+  <div class="footer__container">
     <div class="footer__links">
       <div class="footer__links--wrapper">
         <div class="footer__links--items">
@@ -109,25 +109,24 @@
           <a href="/">Careers</a>
           <a href="/">Invesments</a>
           <a href="/">Terms of Service</a>
-        </div>
+        </div> 
       </div>
     </div>
 
-  </div> -->
+  </div>
+-->
+<p id="demo"></p>
 
- <p id="demo"></p>
+  <script src="app.js"></script>
+  <script>
+    const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi", "Toyota", "Mercedes-Benz", "McLaren", "Porshe", "Tesla"];
   
- <script src="app.js"></script>
-
- <script>
-  const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi", "Toyota", "Mercedes-Benz", "McLaren", "Porshe", "Tesla"];
-
-let text = "";
-for (let i = 0; i < cars.length; i++) {
-  text += cars[i] + " ";
-}
-
-document.getElementById("demo").innerHTML = text;
- </script>
+  let text = "";
+  for (let i = 0; i < cars.length; i++) {
+    text += cars[i] + " ";
+  }
+  
+  document.getElementById("demo").innerHTML = text;
+   </script>
 </body>
 </html>
